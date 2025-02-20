@@ -52,6 +52,10 @@ class SimpleTodos extends Component {
     this.setState({todo: event.target.value})
   }
 
+  onChangeCount = event => {
+    this.setState({count: event.target.value})
+  }
+
   addTodo = () => {
     const {todo, todosList,count} = this.state
 
